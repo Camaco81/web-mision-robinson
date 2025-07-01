@@ -126,10 +126,5 @@ background-color: #f0f2f5; /* Fondo gris claro */
 }
 
 @media only screen and (max-width: 500px) {
- section{
-    width: 435px !important;
- }
- main{
-    padding-left: 15px!important;
- }
+
 }
