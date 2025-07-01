@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Robinson: Enseñando Web</title>
+    <!-- Incluye Tailwind CSS desde CDN para estilos modernos y responsivos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Incluye Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlaces a Bootstrap CSS para modales (aunque usaremos Tailwind para el resto, los modales de Bootstrap son convenientes) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuente Inter de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link rel="shortcut icon" href="imagenes/descarga (2).jpeg" type="image/x-icon">
+ 
+</head>
+<body class="bg-gray-100">
+
+ 
+    <!-- Barra de Navegación (Header) -->
+    <header class="header-bg text-white shadow-lg py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="col-md-3 col-3 col-sm-3 "><img src="imagenes/descarga (6).jpeg" class="col-5 rounded-2 shadow-img"></div>
+            <h1 class="text-3xl font-bold col-7 col-md-3 col-sm-6">Misión Robinson</h1>
+            <nav>
+                <ul class="d-flex  d-none d-md-flex d-sm-none">
+                    <div class="flex space-x-6">
+                     <li><a href="#home" class="hover:underline text-lg">Inicio</a></li>
+                    <li><a href="#historia" class="hover:underline text-lg">Historia</a></li>
+                    <li><a href="#about" class="hover:underline text-lg">Acerca de</a></li>
+                    <li><a href="#contact" class="hover:underline text-lg">Contacto</a></li>
+                    </div>
+              
+                   
+                </ul>
+
+        <ul class="d-flex d-md-none col-3 ">
+            <div class="btn-group">
+                <button type="button" class="text-white">Menu</button>
+                <button type="button" class=" dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+            <li><a href="#home" class="dropdown-item">Inicio</a></li>
+            <li><a href="#historia" class="dropdown-item">Historia</a></li>
+            <li><a href="#about" class="dropdown-item">Acerca de</a></li>
+            <li><a href="#contact" class="dropdown-item">Contacto</a></li>
+            </ul>
+            </div>       
+        </ul>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8">
+        <!-- Sección Hero / Principal -->
+        <section id="home" class="hero-section text-white text-center py-20 rounded-xl mb-12 header-bg shadow-img p-4">
+            <h2 class="text-5xl font-bold mb-4">Bienvenidos a Misión Robinson</h2>
+            <p class="text-xl mb-8">Educación para todos, impulsando el futuro de Venezuela.</p>
+            <button id="learnMoreButton" class="btn btn-primary-custom">Aprende Más</button>
+        </section>
+          <!-- Sección "Historia" -->
+        <section id="historia" class="bg-white p-8 rounded-xl shadow-lg mb-12 card-custom col-12 col-md-12">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center col-12">Historia</h3>
+
+          
+            <p>El 27 de febrero de 1999, poco después del inicio de su presidencia, Hugo Chávez anunció el Plan Bolívar 2000. Se trataba de un plan de programas sociales para atender necesidades urgentes de la población, desempleados y desarrollar las fuerzas productivas a largo plazo. Este plan se realizó con la participación de las Fuerzas Armadas, hecho que se denominó como «alianza cívico-militar», y se planteaba aumentar la coordinación e integración para evitar la «dispersión de esfuerzos».[14] En el año 2000, Chávez anunció el Plan Nacional de Desarrollo Económico y Social 2001-2007 estructurado en cinco ejes: económico («desarrollar una economía productiva»), internacional («fortalecer la soberanía nacional y promover un mundo multipolar»), político («construir una democracia bolivariana»), social («alcanzar la justicia social») y territorial («ocupar y consolidar el territorio»).[15]
+
+Sin embargo, la agenda social tuvo un progreso lento hasta 2003 debido a la agenda política. Los años 1999 y 2000 estuvieron marcados por la aprobación de la Constitución, múltiples elecciones y tensiones internas en el Gobierno. En los años 2001 y 2003 el Gobierno se centró en la aprobación de nuevas leyes, en especial un paquete de 49 leyes aprobadas por decreto mediante la Ley Habilitante que incluían la Ley de Tierras y Desarrollo Rural, la Ley de Hidrocarburos, la Ley de Pesca y Acuicultura, la Ley de Zonas Especiales de Desarrollo Sustentable. La aprobación de estas leyes produjo una fuerte confrontación política en el país, que llevó a un paro cívico nacional convocado por la patronal Fedecámaras, a un paro petrolero y al golpe de estado de 2002, que fue revertido tras 48 horas
+</p>
+       
+
+ </section>
+
+
+        <!-- Sección "Acerca de Nosotros" -->
+        <section id="about" class="bg-white p-8 rounded-xl shadow-lg mb-12 card-custom">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Nuestra Misión y Visión</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h4 class="text-2xl font-semibold text-blue-700 mb-3">Misión</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        La Misión Robinson tiene como objetivo fundamental erradicar el analfabetismo y garantizar el acceso a la educación para todos los ciudadanos venezolanos. A través de métodos innovadores y la participación comunitaria, buscamos empoderar a las personas con conocimientos fundamentales y habilidades para la vida.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-2xl font-semibold text-blue-700 mb-3">Visión</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Visualizamos una Venezuela donde la educación sea un derecho universal y una herramienta de transformación social. Aspiramos a ser un referente en programas educativos inclusivos, contribuyendo al desarrollo integral de nuestra nación y al bienestar de cada individuo.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <img src="imagenes/descarga (3).jpeg" alt="Equipo de Misión Robinson" class="border-100 mx-auto shadow-md col-3">
+            </div>
+        </section>
+
+      
+        <!-- Sección "Contacto" -->
+        <section id="contact" class="bg-white p-8 rounded-xl shadow-lg card-custom">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contáctanos</h3>
+            <p class="text-gray-700 text-center mb-8">Si tienes alguna pregunta o necesitas apoyo, no dudes en contactarnos.</p>
+            <div class="max-w-xl mx-auto">
+                <form action="https://formspree.io/f/mvgrlayr"
+  method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" placeholder="Tu Nombre">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" placeholder="tu.correo@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary-custom"><i class="fas fa-paper-plane mr-2"></i>Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-xl">
+        <p>&copy; 2024 Misión Robinson. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modales de Bootstrap -->
+    <!-- Modal de Login/Registro -->
+    <div class="modal fade" id="loginRegisterModal" tabindex="-1" aria-labelledby="loginRegisterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-to-r from-blue-600 to-blue-800 text-white border-b-0 rounded-t-lg">
+                    <h5 class="modal-title text-xl font-bold" id="loginRegisterModalLabel">Iniciar Sesión / Registrarse</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-6">
+                    <ul class="nav nav-pills mb-4 justify-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active px-4 py-2 rounded-lg text-blue-700 hover:text-blue-900 focus:outline-none" id="pills-login-tab" data-bs-toggle="pill" data-bs-target="#pills-login" type="button" role="tab" aria-controls="pills-login" aria-selected="true">Iniciar Sesión</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link px-4 py-2 rounded-lg text-blue-700 hover:text-blue-900 focus:outline-none" id="pills-register-tab" data-bs-toggle="pill" data-bs-target="#pills-register" type="button" role="tab" aria-controls="pills-register" aria-selected="false">Registrarse</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Pestaña de Iniciar Sesión -->
+                        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label text-gray-700">Correo Electrónico:</label>
+                                    <input type="email" class="form-control rounded-lg focus:ring-2 focus:ring-blue-500" id="loginEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label text-gray-700">Contraseña:</label>
+                                    <input type="password" class="form-control rounded-lg focus:ring-2 focus:ring-blue-500" id="loginPassword" required>
+                                </div>
+                                <div class="d-grid gap-2 mt-4">
+                                    <button type="submit" class="btn btn-primary-custom">Iniciar Sesión</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Pestaña de Registrarse -->
+                        <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="pills-register-tab">
+                            <form id="registerForm">
+                                <div class="mb-3">
+                                    <label for="registerUsername" class="form-label text-gray-700">Nombre de Usuario:</label>
+                                    <input type="text" class="form-control rounded-lg focus:ring-2 focus:ring-blue-500" id="registerUsername" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label text-gray-700">Correo Electrónico:</label>
+                                    <input type="email" class="form-control rounded-lg focus:ring-2 focus:ring-blue-500" id="registerEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label text-gray-700">Contraseña:</label>
+                                    <input type="password" class="form-control rounded-lg focus:ring-2 focus:ring-blue-500" id="registerPassword" required>
+                                </div>
+                                <div class="d-grid gap-2 mt-4">
+                                    <button type="submit" class="btn btn-primary-custom">Registrarse</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Confirmación para Eliminar Cuenta -->
+    <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white border-b-0 rounded-t-lg">
+                    <h5 class="modal-title text-xl font-bold" id="confirmDeleteModalLabel">Confirmar Eliminación de Cuenta</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body p-6 text-gray-700">
+                    <p>¿Estás seguro de que quieres eliminar tu cuenta? Esta acción no se puede deshacer y se eliminarán también todos los recursos que hayas subido.</p>
+                </div>
+                <div class="modal-footer flex justify-end gap-2 p-4">
+                    <button type="button" class="btn btn-secondary-custom bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg px-4 py-2" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" id="confirmDeleteButton" class="btn btn-danger-custom bg-red-500 hover:bg-red-700 text-white rounded-lg px-4 py-2">Eliminar Definitivamente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de Bootstrap (necesario para los modales y componentes JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
